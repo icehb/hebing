@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bing</title>
+</head>
+<style>
+    body{
+        background-image: url(https://www.bing.com/th?id=OHR.CormorantBridge_EN-US1902862286_1920x1080.webp&qlt=50);
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .nav{
+        position: absolute;
+            top: 22px;
+            left:180px;
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            text-align: left;
+            z-index: 1;
+    }
+    .one {
+        margin-right: 30px;
+    }
+     .one :hover{
+        color: rgb(36, 133, 225);
+     }
+    #more-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            z-index: 1;
+        }
+    #more{background: none;
+        border: 0;
+        color: aliceblue;
+
+    }
+       
+    #more-link:hover + #more-dropdown,
+        #more-dropdown:hover {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 165px;
+        }
+        .more{
+            color: black;
+            font-size: 20px;
+        }
+        
+
+    img{
+        position: absolute;
+            top: 20px;
+            left: 15px;
+            width: 100px;
+            height: 40px;
+            z-index: 0;
+    }
+    a{
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(228, 233, 237);
+    }
+    .two{
+        position: absolute  ;
+        top: 50%;
+        left: 50%;
+    }
+    #text{
+        border: 10px;
+        border-radius: 18px;
+        background-color: rgb(241, 246, 246);
+        width: 400px;
+        padding: 10px;
+
+    }
+    #sure{
+        background-color: rgb(169, 184, 191);
+        border: 0;
+        border-radius: 5px;
+        color: aliceblue;
+        width: 50px;
+        height: 30px;
+
+    }
+    #sure:hover{
+        background-color: rgb(53, 131, 226);
+        width: 60px;
+        height: 40px;
+    }
+
+</style>
+<body>
+ <div class="dh">
+      <div>
+       <!--logo-->
+      <img src="https://www.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png" alt="bing">
+       </div>
+       <div class="nav"> 
+         <!--导航-->
+        <span class="one"><a href="#">picture</a></span>
+        <span class="one"><a href="#">video</a></span>
+        <span class="one">
+            <a id="more-link" href="#">more</a>
+            <div id="more-dropdown">
+                <a href="#" class="more" >message</a>
+                </div>
+     </span>
+
+        </div>
+ </div>
+    <div class="two">
+        <form action="">
+            <input type="text" id="text" placeholder="输入内容……">
+            <input type="submit" value="搜索" id="sure">
+        </form>
+    </div>
+    
+    
+</body>
+</html>
